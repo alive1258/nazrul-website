@@ -25,17 +25,15 @@ const SlideRight = ({ children, className = "", delay = 1 }: SlideRightProps) =>
   };
 
   return (
-    <div className="overflow-hidden">
-      <motion.div
-        className={`w-full max-w-[99%] mx-auto ${className}`}
-        variants={slideRightVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        {children}
-      </motion.div>
-    </div>
+    <motion.div
+      className={className}
+      variants={slideRightVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      {children}
+    </motion.div>
   );
 };
 

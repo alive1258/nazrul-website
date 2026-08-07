@@ -1,6 +1,6 @@
 "use client";
 
-import { User, MapPin, GraduationCap, BookOpen, Award } from "lucide-react";
+import { User, MapPin, Home, GraduationCap, BookOpen, Award } from "lucide-react";
 import SlideDown from "@/src/components/Common/Animaation/SlideDown";
 import SlideLeft from "@/src/components/Common/Animaation/SlideLeft";
 import SlideRight from "@/src/components/Common/Animaation/SlideRight";
@@ -23,6 +23,17 @@ export default function About() {
         ar: "نوهاتا، شوهالي، سيراج‌غانج",
         en: "Nowhata, Chauhali, Sirajganj",
         bn: "নওহাটা, চৌহালী, সিরাজগঞ্জ",
+      },
+    },
+    {
+      icon: Home,
+      ar: ar.about.facts.presentAddress,
+      en: en.about.facts.presentAddress,
+      bn: bn.about.facts.presentAddress,
+      value: {
+        ar: "مدينة السلام، القاهرة، مصر",
+        en: "Madinat al-Salam, Cairo, Egypt",
+        bn: "মদীনাতুস সালাম, কায়রো, মিশর",
       },
     },
     {

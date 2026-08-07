@@ -35,6 +35,7 @@
     "sidebarHeading": "Quick Facts",
     "facts": {
       "address": "Permanent Address",
+      "presentAddress": "Present Address",
       "institution": "Current Institution",
       "specialty": "Specialty",
       "specialtyValue": "Hafiz-e-Quran"
@@ -47,10 +48,101 @@
       },
       {
         "title": "Moved to Egypt for Higher Education",
-        "location": "Cairo, Egypt",
+        "location": "Madinat al-Salam, Cairo, Egypt",
         "description": "Currently residing in Egypt and pursuing higher education at Al-Azhar University, continuing my studies regularly with the goal of acquiring Islamic knowledge."
       }
     ]
+  },
+  "visionMission": {
+    "heading": "Vision & Mission",
+    "subtitle": "The purpose guiding my journey",
+    "vision": {
+      "title": "Vision",
+      "description": "To become a knowledgeable and righteous scholar of Islam who preserves the Quran in both heart and practice, and to serve as a source of guidance and benefit for the Muslim Ummah."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To continue pursuing authentic Islamic knowledge with sincerity and diligence, to uphold and pass on the teachings of the Quran and Sunnah, and to dedicate my life to the service of Islam and humanity."
+    }
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "subtitle": "Moments from my journey",
+    "imageAlt": "Photo",
+    "loadMore": "Load More"
+  },
+  "videos": {
+    "heading": "Videos",
+    "subtitle": "Recitations, lectures, and event highlights",
+    "all": "All",
+    "categories": {
+      "recitation": "Quran Recitation",
+      "lectures": "Lectures",
+      "events": "Events"
+    },
+    "play": "Play video",
+    "viewMore": "View More"
+  },
+  "blog": {
+    "heading": "Blog",
+    "subtitle": "Reflections from my studies and journey",
+    "all": "All",
+    "categories": {
+      "quran": "Quran & Recitation",
+      "islamicStudies": "Islamic Studies",
+      "lifeJourney": "Life & Journey"
+    },
+    "readMore": "Read More",
+    "close": "Close"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subtitle": "Answers to what people ask me most",
+    "items": [
+      {
+        "question": "What does it mean to be a Hafiz-e-Quran?",
+        "answer": "A Hafiz-e-Quran is someone who has memorized the entire Holy Quran by heart. I completed this at a Maktab in my childhood and continue to revise it regularly to keep it fresh in memory."
+      },
+      {
+        "question": "What are you currently studying at Al-Azhar University?",
+        "answer": "I am pursuing Islamic higher studies at Al-Azhar University in Egypt, continuing the path I began with Hifz and the Kitab department, with the goal of deepening my Islamic knowledge."
+      },
+      {
+        "question": "How did your educational journey begin?",
+        "answer": "It began with completing the full memorization of the Holy Quran at Omar Khattab (RA) Madrasa. I then studied in the Kitab department, completed Hedayatun Naho, and took an English language course before moving to Egypt for higher education."
+      },
+      {
+        "question": "Have you performed Umrah?",
+        "answer": "Yes, by the mercy of Allah I had the opportunity to perform Umrah in Saudi Arabia, staying there for about a week to complete the pilgrimage."
+      },
+      {
+        "question": "Can I ask you a religious question or request guidance?",
+        "answer": "Yes, feel free to reach out through the contact section below. I try to respond to messages as time permits alongside my studies."
+      },
+      {
+        "question": "Do you offer Quran classes or tutoring?",
+        "answer": "I am currently focused on my studies at Al-Azhar University. If you're interested in guidance or classes, please get in touch through the contact form and I will let you know what is possible."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "subtitle": "Get in touch",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been prepared.",
+      "nameRequired": "Please enter your name",
+      "emailRequired": "Please enter a valid email",
+      "messageRequired": "Please enter a message"
+    },
+    "info": {
+      "locationLabel": "Location",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone"
+    }
   },
   "education": {
     "heading": "Education",
@@ -58,19 +150,10 @@
     "currentLabel": "Current",
     "stages": [
       {
-        "stage": "Hifz of the Holy Quran",
-        "institution": "Omar Khattab (RA) Madrasa, Satbaria, Shahjadpur",
-        "description": "Completed the full memorization (Hifz) of the Holy Quran at the Maktab."
-      },
-      {
-        "stage": "Kitab Department (Beginning to Nahmir)",
-        "institution": "Jamiatul Abrar, Bashundhara Riverview, Dhaka",
-        "description": "Completed studies from the beginning of the Kitab department up to Nahmir."
-      },
-      {
-        "stage": "Hedayatun Naho",
-        "institution": "Uttara Darul Arqam Al-Islamia, Dhaka",
-        "description": "Completed the study of the Hedayatun Naho text."
+        "stage": "Higher Education (Current)",
+        "institution": "Al-Azhar University, Egypt",
+        "description": "Currently residing in Egypt, pursuing Islamic higher education with regular studies.",
+        "current": true
       },
       {
         "stage": "English Language Course",
@@ -78,10 +161,76 @@
         "description": "Successfully completed an English language course."
       },
       {
-        "stage": "Higher Education (Current)",
-        "institution": "Al-Azhar University, Egypt",
-        "description": "Currently residing in Egypt, pursuing Islamic higher education with regular studies.",
+        "stage": "Hedayatun Naho",
+        "institution": "Uttara Darul Arqam Al-Islamia, Dhaka",
+        "description": "Completed the study of the Hedayatun Naho text."
+      },
+      {
+        "stage": "Kitab Department (Beginning to Nahmir)",
+        "institution": "Jamiatul Abrar, Bashundhara Riverview, Dhaka",
+        "description": "Completed studies from the beginning of the Kitab department up to Nahmir."
+      },
+      {
+        "stage": "Hifz of the Holy Quran",
+        "institution": "Omar Khattab (RA) Madrasa, Satbaria, Shahjadpur",
+        "description": "Completed the full memorization (Hifz) of the Holy Quran at the Maktab."
+      }
+    ]
+  },
+  "achievements": {
+    "heading": "Achievements",
+    "subtitle": "Milestones and facts along the way",
+    "stats": [
+      { "label": "Educational Milestones" },
+      { "label": "Countries" },
+      { "label": "Languages" },
+      { "label": "Sacred Umrah Completed" }
+    ]
+  },
+  "experience": {
+    "heading": "Experience",
+    "subtitle": "Roles and involvement along the journey",
+    "items": [
+      {
+        "role": "Islamic Studies Circle",
+        "place": "Al-Azhar University, Egypt",
+        "period": "Current",
+        "description": "Taking part in study circles and discussions as part of higher Islamic education.",
         "current": true
+      },
+      {
+        "role": "Khutbah & Islamic Talks",
+        "place": "Community Gatherings",
+        "period": "Occasional",
+        "description": "Delivering short Islamic talks and reminders (Waz/Bayan) at local gatherings."
+      },
+      {
+        "role": "Quran Teaching & Guidance",
+        "place": "Local Maktab & Community",
+        "period": "Ongoing",
+        "description": "Helping younger students with Quran memorization (Hifz) and correct Tajweed recitation."
+      }
+    ]
+  },
+  "services": {
+    "heading": "Services",
+    "subtitle": "How I can help",
+    "items": [
+      {
+        "title": "Quran & Tajweed Teaching",
+        "description": "One-on-one or group sessions for Quran memorization and correct Tajweed recitation."
+      },
+      {
+        "title": "Arabic Language Guidance",
+        "description": "Basic Arabic reading, writing, and comprehension guidance for students."
+      },
+      {
+        "title": "Islamic Talks & Khutbah",
+        "description": "Delivering Islamic reminders, talks, and Friday sermons on request."
+      },
+      {
+        "title": "Umrah & Hajj Guidance",
+        "description": "Practical guidance and preparation tips based on personal Umrah experience."
       }
     ]
   }

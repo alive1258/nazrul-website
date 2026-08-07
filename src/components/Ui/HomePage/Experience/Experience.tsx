@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import SlideDown from "@/src/components/Common/Animaation/SlideDown";
 import SlideUp from "@/src/components/Common/Animaation/SlideUp";
 import bn from "@/src/data/locales/bn.json";
@@ -10,41 +10,41 @@ import ar from "@/src/data/locales/ar.json";
 const LATIN_FONT = { fontFamily: "var(--font-inter)" };
 const ARABIC_FONT = { fontFamily: "var(--font-arabic)" };
 
-export default function Education() {
+export default function Experience() {
   return (
     <section
-      id="education"
-      aria-labelledby="education-heading"
-      className="py-16 md:py-24 bg-linear-to-br from-indigo-50/40 via-white to-white"
+      id="experience"
+      aria-labelledby="experience-heading"
+      className="py-16 md:py-24 bg-white"
     >
       <div className="container">
         <SlideDown className="flex flex-col items-center text-center gap-4 mb-12 md:mb-16">
           <div>
             <h2
-              id="education-heading"
+              id="experience-heading"
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900"
             >
               <span className="block" style={ARABIC_FONT} dir="rtl">
-                {ar.education.heading}
+                {ar.experience.heading}
               </span>
               <span
                 className="block text-2xl sm:text-3xl md:text-4xl mt-1"
                 style={LATIN_FONT}
               >
-                {en.education.heading}
+                {en.experience.heading}
               </span>
               <span className="block text-2xl sm:text-3xl md:text-4xl mt-1">
-                {bn.education.heading}
+                {bn.experience.heading}
               </span>
             </h2>
             <p className="text-gray-500 mt-2 text-sm sm:text-base space-y-0.5">
               <span className="block" style={ARABIC_FONT} dir="rtl">
-                {ar.education.subtitle}
+                {ar.experience.subtitle}
               </span>
               <span className="block" style={LATIN_FONT}>
-                {en.education.subtitle}
+                {en.experience.subtitle}
               </span>
-              <span className="block">{bn.education.subtitle}</span>
+              <span className="block">{bn.experience.subtitle}</span>
             </p>
           </div>
         </SlideDown>
@@ -55,8 +55,8 @@ export default function Education() {
             aria-hidden="true"
           />
 
-          {bn.education.stages.map((stage, index) => {
-            const isCurrent = Boolean(stage.current);
+          {bn.experience.items.map((item, index) => {
+            const isCurrent = Boolean(item.current);
             return (
               <SlideUp
                 key={index}
@@ -70,7 +70,7 @@ export default function Education() {
                       : "bg-indigo-100"
                   }`}
                 >
-                  <GraduationCap
+                  <Briefcase
                     className={`w-4 h-4 sm:w-5 sm:h-5 ${
                       isCurrent ? "text-white" : "text-indigo-600"
                     }`}
@@ -85,18 +85,17 @@ export default function Education() {
                       : "border-gray-100"
                   }`}
                 >
-                  {isCurrent && (
-                    <span className="inline-flex items-center gap-2 mb-3 rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700">
-                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse" />
-                      <span style={ARABIC_FONT} dir="rtl">
-                        {ar.education.currentLabel}
-                      </span>
-                      <span style={LATIN_FONT}>
-                        {en.education.currentLabel}
-                      </span>
-                      <span>{bn.education.currentLabel}</span>
+                  <span className="inline-flex items-center gap-2 mb-3 rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 space-x-1">
+                    <span style={ARABIC_FONT} dir="rtl">
+                      {ar.experience.items[index].period}
                     </span>
-                  )}
+                    <span>·</span>
+                    <span style={LATIN_FONT}>
+                      {en.experience.items[index].period}
+                    </span>
+                    <span>·</span>
+                    <span>{item.period}</span>
+                  </span>
 
                   <h3 className="font-bold text-gray-900 space-y-0.5">
                     <span
@@ -104,37 +103,37 @@ export default function Education() {
                       style={ARABIC_FONT}
                       dir="rtl"
                     >
-                      {ar.education.stages[index].stage}
+                      {ar.experience.items[index].role}
                     </span>
                     <span
                       className="block text-base sm:text-lg"
                       style={LATIN_FONT}
                     >
-                      {en.education.stages[index].stage}
+                      {en.experience.items[index].role}
                     </span>
                     <span className="block text-base sm:text-lg">
-                      {stage.stage}
+                      {item.role}
                     </span>
                   </h3>
 
                   <p className="text-indigo-600 font-medium text-sm mt-1 space-y-0.5">
                     <span className="block" style={ARABIC_FONT} dir="rtl">
-                      {ar.education.stages[index].institution}
+                      {ar.experience.items[index].place}
                     </span>
                     <span className="block" style={LATIN_FONT}>
-                      {en.education.stages[index].institution}
+                      {en.experience.items[index].place}
                     </span>
-                    <span className="block">{stage.institution}</span>
+                    <span className="block">{item.place}</span>
                   </p>
 
                   <div className="text-gray-600 text-sm leading-relaxed mt-3 space-y-1.5">
                     <p style={ARABIC_FONT} dir="rtl">
-                      {ar.education.stages[index].description}
+                      {ar.experience.items[index].description}
                     </p>
                     <p style={LATIN_FONT}>
-                      {en.education.stages[index].description}
+                      {en.experience.items[index].description}
                     </p>
-                    <p>{stage.description}</p>
+                    <p>{item.description}</p>
                   </div>
                 </div>
               </SlideUp>
