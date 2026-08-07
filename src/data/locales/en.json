@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "siteName": "Md. Nazrul Islam",
+    "title": "Md. Nazrul Islam | Hafiz-e-Quran",
+    "description": "Hafiz-e-Quran, currently pursuing Islamic higher studies at Al-Azhar University, Egypt."
+  },
+  "nav": {
+    "langLabel": "Language"
+  },
+  "hero": {
+    "eyebrow": "Assalamu Alaikum",
+    "name": "Md. Nazrul Islam",
+    "role": "Hafiz-e-Quran",
+    "subrole": "Islamic Higher Studies Student at Al-Azhar University",
+    "tagline": "Continuing my studies with the goal of acquiring Islamic knowledge — currently pursuing higher education at Al-Azhar University in Egypt.",
+    "avatarInitial": "NI",
+    "badges": [
+      { "icon": "mapPin", "label": "Nowhata, Chauhali, Sirajganj" },
+      { "icon": "graduationCap", "label": "Al-Azhar University, Egypt" },
+      { "icon": "bookOpen", "label": "Hafiz-e-Quran" }
+    ],
+    "cta": {
+      "primary": "About Me",
+      "secondary": "Contact"
+    }
+  },
+  "about": {
+    "heading": "About Me",
+    "subtitle": "The Story and Journey",
+    "paragraphs": [
+      "My name is Md. Nazrul Islam. I grew up with a passion for Islamic education from an early age. My educational journey began with completing the full memorization (Hifz) of the Holy Quran at a Maktab.",
+      "I then went on to study continuously in the Kitab (advanced Islamic studies) department, while also gaining proficiency in English. By the boundless mercy of Allah, I was also blessed with the opportunity to perform the sacred Umrah.",
+      "I am currently residing in Egypt, pursuing higher education at Al-Azhar University. I continue my studies regularly with the goal of acquiring Islamic knowledge."
+    ],
+    "sidebarHeading": "Quick Facts",
+    "facts": {
+      "address": "Permanent Address",
+      "institution": "Current Institution",
+      "specialty": "Specialty",
+      "specialtyValue": "Hafiz-e-Quran"
+    },
+    "highlights": [
+      {
+        "title": "Performed the Sacred Umrah",
+        "location": "Saudi Arabia",
+        "description": "By the boundless mercy of Allah, I had the fortune of traveling to Saudi Arabia to perform the sacred Umrah, staying there for about seven days to complete the pilgrimage."
+      },
+      {
+        "title": "Moved to Egypt for Higher Education",
+        "location": "Cairo, Egypt",
+        "description": "Currently residing in Egypt and pursuing higher education at Al-Azhar University, continuing my studies regularly with the goal of acquiring Islamic knowledge."
+      }
+    ]
+  },
+  "education": {
+    "heading": "Education",
+    "subtitle": "A step-by-step academic journey",
+    "currentLabel": "Current",
+    "stages": [
+      {
+        "stage": "Hifz of the Holy Quran",
+        "institution": "Omar Khattab (RA) Madrasa, Satbaria, Shahjadpur",
+        "description": "Completed the full memorization (Hifz) of the Holy Quran at the Maktab."
+      },
+      {
+        "stage": "Kitab Department (Beginning to Nahmir)",
+        "institution": "Jamiatul Abrar, Bashundhara Riverview, Dhaka",
+        "description": "Completed studies from the beginning of the Kitab department up to Nahmir."
+      },
+      {
+        "stage": "Hedayatun Naho",
+        "institution": "Uttara Darul Arqam Al-Islamia, Dhaka",
+        "description": "Completed the study of the Hedayatun Naho text."
+      },
+      {
+        "stage": "English Language Course",
+        "institution": "Ahmad's Education, Demra Signboard, Dhaka",
+        "description": "Successfully completed an English language course."
+      },
+      {
+        "stage": "Higher Education (Current)",
+        "institution": "Al-Azhar University, Egypt",
+        "description": "Currently residing in Egypt, pursuing Islamic higher education with regular studies.",
+        "current": true
+      }
+    ]
+  }
+}
