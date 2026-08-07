@@ -1,6 +1,7 @@
 "use client";
 
-import { User, MapPin, Home, GraduationCap, BookOpen, Award } from "lucide-react";
+import Image from "next/image";
+import { MapPin, Home, GraduationCap, BookOpen, Award } from "lucide-react";
 import SlideDown from "@/src/components/Common/Animaation/SlideDown";
 import SlideLeft from "@/src/components/Common/Animaation/SlideLeft";
 import SlideRight from "@/src/components/Common/Animaation/SlideRight";
@@ -98,34 +99,74 @@ export default function About() {
           </div>
         </SlideDown>
 
-        <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
-          <SlideLeft className="lg:col-span-2">
-            <div className="h-full bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 space-y-6">
-              {bn.about.paragraphs.map((paragraph, index) => (
-                <div key={index} className="space-y-2">
-                  <p
-                    className="text-sm sm:text-base leading-relaxed text-gray-600"
-                    style={ARABIC_FONT}
-                    dir="rtl"
-                  >
-                    {ar.about.paragraphs[index]}
-                  </p>
-                  <p
-                    className="text-sm sm:text-base leading-relaxed text-gray-600"
-                    style={LATIN_FONT}
-                  >
-                    {en.about.paragraphs[index]}
-                  </p>
-                  <p className="text-sm sm:text-base leading-relaxed text-gray-600">
-                    {paragraph}
-                  </p>
+        <div className="grid lg:grid-cols-5 gap-6 md:gap-8">
+          <SlideLeft className="lg:col-span-2 lg:self-start">
+            <div className="relative max-w-xs sm:max-w-sm mx-auto lg:max-w-none">
+              <div
+                className="hidden sm:block absolute -inset-3 rounded-4xl bg-linear-to-br from-indigo-200 via-indigo-100 to-transparent -z-10"
+                aria-hidden="true"
+              />
+              <div className="group relative aspect-4/5 rounded-2xl overflow-hidden border-4 border-white shadow-lg ring-1 ring-indigo-100">
+                <Image
+                  src="/img/naz.jpeg"
+                  alt="Md. Nazrul Islam"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 80vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105 active:scale-95"
+                />
+                <div
+                  className="absolute inset-0 bg-linear-to-t from-black/70 via-black/0 to-transparent"
+                  aria-hidden="true"
+                />
+                <div className="absolute bottom-0 inset-x-0 p-4 sm:p-5">
+                  <span className="inline-flex flex-wrap items-center gap-x-1.5 rounded-full bg-white/95 backdrop-blur px-3 py-1.5 text-xs font-semibold text-indigo-700 shadow-sm">
+                    <span style={ARABIC_FONT} dir="rtl">
+                      {ar.about.facts.specialtyValue}
+                    </span>
+                    <span className="text-indigo-300">|</span>
+                    <span style={LATIN_FONT}>
+                      {en.about.facts.specialtyValue}
+                    </span>
+                    <span className="text-indigo-300">|</span>
+                    <span>{bn.about.facts.specialtyValue}</span>
+                  </span>
                 </div>
-              ))}
+              </div>
             </div>
           </SlideLeft>
 
-          <SlideRight>
-            <div className="h-full bg-gradient-to-br from-indigo-50 to-indigo-100/60 rounded-2xl p-6 md:p-8 border border-indigo-100">
+          <div className="lg:col-span-3 flex flex-col gap-6 md:gap-8">
+            <SlideRight>
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 space-y-6">
+                {bn.about.paragraphs.map((paragraph, index) => (
+                  <div key={index} className="space-y-2">
+                    <p
+                      className="text-sm sm:text-base leading-relaxed text-gray-600"
+                      style={ARABIC_FONT}
+                      dir="rtl"
+                    >
+                      {ar.about.paragraphs[index]}
+                    </p>
+                    <p
+                      className="text-sm sm:text-base leading-relaxed text-gray-600"
+                      style={LATIN_FONT}
+                    >
+                      {en.about.paragraphs[index]}
+                    </p>
+                    <p className="text-sm sm:text-base leading-relaxed text-gray-600">
+                      {paragraph}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </SlideRight>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <SlideUp delay={2}>
+            <div className="bg-linear-to-br from-indigo-50 to-indigo-100/60 rounded-2xl p-6 md:p-8 border border-indigo-100">
               <h3 className="text-lg font-bold text-gray-900 mb-5 space-y-0.5">
                 <span className="block" style={ARABIC_FONT} dir="rtl">
                   {ar.about.sidebarHeading}
@@ -137,7 +178,7 @@ export default function About() {
                   {bn.about.sidebarHeading}
                 </span>
               </h3>
-              <ul className="space-y-5">
+              <ul className="grid sm:grid-cols-2 gap-5">
                 {facts.map(
                   (
                     {
@@ -188,7 +229,7 @@ export default function About() {
                 )}
               </ul>
             </div>
-          </SlideRight>
+          </SlideUp>
         </div>
 
         {bn.about.highlights.length > 0 && (

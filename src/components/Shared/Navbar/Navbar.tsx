@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -41,7 +42,17 @@ export default function Navigation() {
         <div className="container">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
-              <h1>Md Nazrul Islam</h1>
+              <Image
+                src="/img/n-logo.png"
+                alt="Md. Nazrul Islam"
+                width={40}
+                height={40}
+                className="h-9 w-9 sm:h-10 sm:w-10 object-contain"
+                priority
+              />
+              <h1 className="text-base sm:text-lg font-bold text-indigo-700 tracking-tight leading-none">
+                Md. Nazrul Islam
+              </h1>
             </div>
 
             <div className="hidden md:flex items-center gap-4 lg:gap-6">
